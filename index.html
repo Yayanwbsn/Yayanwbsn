@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yayanwbsn</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--My Style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--Navbar start-->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Yayan<span>wbsn</span></a>
+      <div class="navbar-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Hero Section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <img src="img/header-bg.jpg" alt="Profile" class="profile-img" />
+        <h1>Hello, I'm <span>Yayan</span></h1>
+        <p>Mahasiswa Baru Udinus | Web Developer Enthusiast</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/akhmad-wahyudi-yanuar-wibisono-21884b325/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i data-feather="linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Yayanwbsn"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i data-feather="github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/yayanwbsn_/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+            ><i data-feather="instagram"></i
+          ></a>
+        </div>
+        <a href="#contact" class="btn">Contact Me</a>
+      </main>
+    </section>
+    <!--Hero Section end-->
+
+    <!--About Section start-->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Mahasiswa baru S1-Teknik Informatika UDINUS, bersemangat mempelajari
+          teknologi, disiplin, serta ingin mengasah soft skill melalui
+          pengalaman organisasi untuk mendukung prestasi akademik maupun
+          pengembangan diri.
+        </p>
+      </div>
+    </section>
+    <!--About Section end-->
+
+    <!--Portfolio Section start-->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-list" style="justify-content: center">
+          <div class="card">
+            <h3>Personal Website</h3>
+            <p>
+              Website portofolio pribadi menggunakan HTML, CSS, dan JavaScript.
+            </p>
+            <a
+              href="file:///F:/LATIHAN%20VS%20CODE/Yayanwbsn_/index.html"
+              target="_blank"
+              class="btn"
+              >Lihat Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio Section end-->
+
+    <!--Contact Section start-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <input type="text" id="nama" placeholder="Nama" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea id="pesan" placeholder="Pesan" required></textarea>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+        <div id="hasilContact" style="margin-top: 2rem; display: none">
+          <h3>Data yang Anda Kirim:</h3>
+          <table
+            style="
+              width: 100%;
+              max-width: 400px;
+              border-collapse: collapse;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            "
+          >
+            <tr>
+              <td style="padding: 8px; font-weight: 600">Nama</td>
+              <td id="tampilNama" style="padding: 8px"></td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; font-weight: 600">Email</td>
+              <td id="tampilEmail" style="padding: 8px"></td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; font-weight: 600">Pesan</td>
+              <td id="tampilPesan" style="padding: 8px"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!--Contact Section end-->
+
+    <!--Footer start-->
+    <footer>
+      <div class="container">
+        <div class="footer-nav" style="margin-top: 1rem">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <p>&copy; 2025 Yayanwbsn. All rights reserved.</p>
+      </div>
+    </footer>
+    <!--Footer end-->
+
+    <!--Feather Icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--My Javascript.js-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
